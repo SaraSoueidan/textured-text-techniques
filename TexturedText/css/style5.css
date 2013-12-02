@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	padding-bottom: 100px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+svg {
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	font-family: "Oswald";
+	margin: 30px auto;
+	outline: 1px solid transparent;
+	-webkit-transform: translateZ(-100px) translateY(-30px) rotateY(-25deg) rotateX(10deg);
+	transform: translateZ(-100px) translateY(-30px) rotateY(-25deg) rotateX(10deg);
+	-webkit-filter: drop-shadow(30px 20px 15px rgba(0,0,0,0.5));
+}
+

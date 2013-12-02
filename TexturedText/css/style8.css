@@ -1,0 +1,22 @@
+body {
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+	padding-bottom: 100px;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#canvas {
+	background-color: #050505;
+	display: block;
+	-webkit-transform: translateZ(-300px) translateY(-100px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
+	transform: translateZ(-300px) translateY(-100px) rotateY(30deg) rotateX(30deg) rotateZ(-10deg);
+	margin: 50px auto;
+	outline: 1px solid transparent;
+	box-shadow: -50px 50px 40px rgba(0,0,0,0.4);
+}

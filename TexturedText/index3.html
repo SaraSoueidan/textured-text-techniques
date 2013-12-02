@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Techniques for Creating Textured Text | Demo 3</title>
+		<meta name="description" content="Techniques for Creating Textured Text" />
+		<meta name="keywords" content="fill text image, textured text, css text clip, svg image text, canvas text image, image in background of text" />
+		<meta name="author" content="Sara Soueidan for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="codrops-top clearfix">
+			<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/AnimatedOpeningType/"><span>Previous Demo</span></a>
+			<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=17424"><span>Back to the Codrops Article</span></a></span>
+		</div>
+		<header class="codrops-header">
+			<h1>Techniques for Creating Textured Text</h1>
+			<nav class="codrops-demos">
+				<a href="index.html">Backgound-clip: text</a>
+				<a href="index2.html">mask-image: url()</a>
+				<a class="current-demo" href="index3.html">SVG &lt;clippath&gt;</a>
+				<a href="index4.html">SVG pattern fill</a>
+				<a href="index5.html">SVG gradient fill</a>
+				<a href="index6.html">SVG mask</a>
+				<a href="index7.html">Canvas #1</a>
+				<a href="index8.html">Canvas #2</a>
+				<a href="index9.html">Canvas #3</a>
+			</nav>
+		</header>
+		<div class="container">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1"  xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="400" viewBox="0 0 1200 400"> 
+				<!-- add title for accessibility -->
+				<title>Adding Background to Text using SVG clipPath</title> 
+				<defs>  
+					<clippath id="my-path">
+						<text x="50" y="300" font-size="200" >WATERCOLOR</text>
+					</clippath>
+				</defs>
+				<image xlink:href="img/watercolor_1.jpg" clip-path="url(#my-path)" width="100%" height="100%" id="filler" preserveAspectRatio="none" />
+			</svg>
+		</div>
+	</body>
+</html>

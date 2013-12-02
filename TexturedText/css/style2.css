@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+	-webkit-perspective: 2000px;
+	perspective: 2000px;
+	padding-bottom: 100px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 2em;
+	text-transform: uppercase;
+	box-shadow: 50px 50px 20px rgba(0,0,0,0.1);
+	-webkit-transform: translateZ(-300px) translateY(-130px) rotateY(-30deg) rotateX(30deg) rotateZ(10deg);
+	transform: translateZ(-300px) translateY(-130px) rotateY(-30deg) rotateX(30deg) rotateZ(10deg);
+	-webkit-transition: -webkit-transform 1s ease;
+	transition: transform 1s ease;
+	background: url(../img/watercolor_1.jpg);
+	background-size: cover;
+	outline: 1px solid transparent;
+}
+
+.container h1 {
+	font: 35em/100% "Oswald", sans-serif;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	-webkit-mask-image: url(../img/splatter-mask_1.png); 
+	mask-image: url(../img/splatter-mask_1.png); 
+}
+
+.container h2 {
+	font-size: 5em;
+	letter-spacing:-3px;
+	text-align: center; 
+	color: #fff;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
